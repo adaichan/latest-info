@@ -1,0 +1,42 @@
+/* pages/movieDetail/movieDetail.wxss */
+page {
+  height: 100%;
+  background: #FFEBC8;
+}
+
+.movieDetailContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.movie_img {
+  height: 800rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.movie_name {
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.movie_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 32rpx;
+}
+
+button {
+  width: 46%;
+  line-height: 88rpx;
+  border: 2rpx solid #6E6E6E;
+  border-radius: 28rpx;
+  background: lightskyblue;
+  color: gold;
+  margin-top: 20rpx;
+}

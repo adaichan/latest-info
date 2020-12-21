@@ -1,0 +1,18 @@
+<!--pages/index/index.wxml-->
+<view class="indexContainer">
+	<image class="companyImg" style="display: {{isShow?'block': 'none'}}" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598962116078&di=3a1fd7f99cb3bcb66d45f9a731ffe558&imgtype=0&src=http%3A%2F%2Fwww.cnstock.com%2Fimage%2F201409%2F30%2F20140930091230186.jpg"></image>
+	<image class="avatar" src="{{userInfo.avatarUrl}}" style="display: {{!isShow?'block': 'none'}}"></image>
+	<view class="lineTop" style="display: {{isShow?'block': 'none'}}"></view>
+	<text class="userName" style="display: {{isShow?'block': 'none'}}">Welcome to PowerChina !</text>
+	<text class="userName" style="display: {{!isShow?'block': 'none'}}">hello {{userInfo.nickName}}!</text>
+	<button bindgetuserinfo="handleGetUserInfo" style="display: {{isShow?'block': 'none'}}" open-type='getUserInfo'>登录</button>
+	<view catchtap="handleClick" class="logIn" style="display: {{!isShow?'block': 'none'}}">
+		<text>武汉重工欢迎您!</text>
+	</view>
+	
+	<view class="contactInfo" style="display: {{isShow?'block': 'none'}}">
+		<view class="lineEnd" style="display: {{isShow?'block': 'none'}}"></view>
+		<text>联系电话: 027-68888412 传真: 027-88113825</text>
+		<text>地址: 湖北省武汉市武昌区白沙洲特1号 邮编: 430065</text>
+	</view>
+</view>

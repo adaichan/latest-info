@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/movies/movies",
+    "pages/movieDetail/movieDetail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0087FF",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "武汉重工装备有限公司"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "电建周刊",
+        "iconPath": "/images/tab/news.png",
+        "selectedIconPath": "/images/tab/news_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "影视推荐",
+        "iconPath": "/images/tab/movie.png",
+        "selectedIconPath": "/images/tab/movie_hl.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap57.json"
+}

@@ -1,0 +1,82 @@
+/* pages/index/index.wxss */
+page {
+  background: #A4D1FF;
+  height: 100%;
+}
+
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.companyImg {
+  width: 100%;
+  height: 440rpx;
+}
+
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  margin: 120rpx 0;
+}
+
+.lineTop {
+  width: 100%;
+  height: 4rpx;
+  background: #B34665;
+}
+
+.userName {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 120rpx 0;
+}
+
+button {
+  width: 480rpx;
+  height: 120rpx;
+  font-size: 40rpx;
+  color: #fff;
+  border: 4rpx solid #6E6E6E;
+  border-radius: 100rpx;
+  background: #2195FF;
+  margin-bottom: 100rpx;
+}
+
+.logIn {
+  width: 500rpx;
+  height: 120rpx;
+  background: #2D9DFF;
+  font-size: 48rpx;
+  font-weight: bold;
+  border: 4rpx solid #6E6E6E;
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 120rpx;
+  margin-top: 100rpx;
+}
+
+.contactInfo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #E1E1E1;
+  color: #6E6E6E;
+  font-size: 28rpx;
+}
+
+.lineEnd {
+  width: 100%;
+  height: 4rpx;
+  background: #144F9D;
+}
+
+.contactInfo text {
+  display: flex;
+  justify-content: center;
+  margin: 20rpx 0;
+}

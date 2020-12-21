@@ -1,0 +1,96 @@
+/* pages/detail/detail.wxss */
+page {
+  height: 100%;
+  background: #FFEBC8;
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.headImg {
+  width: 100%;
+  height: 460rpx;
+}
+
+/* .musicImg {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  margin-left: -30rpx;
+} */
+
+.avatar_date {
+  padding: 10rpx;
+  margin: 10rpx 0 5rpx 5rpx;
+}
+
+.avatar_date image {
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+}
+
+.avatar_date text {
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+
+.title {
+  text-align: center;
+  font-size: 38rpx;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+
+.content {
+  font-size: 32rpx;
+  text-indent: 32rpx;
+  text-align: justify;
+  margin: 20rpx;
+}
+
+.collection_share_container {
+  /* 开启定位 */
+  position: relative;
+  margin-top: 20rpx;
+}
+
+button {
+  width: 260rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 25rpx;
+  border: 0.5rpx solid #6E6E6E;
+  background: #DEDEDD;
+}
+
+.collection_share {
+  float: right;
+}
+
+.collection_share image {
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 20rpx;
+}
+
+.line {
+  width: 90%;
+  height: 1rpx;
+  background: black;
+  /* position是相对于离它最近的开启了定位的祖先元素来定位 */
+  position: absolute;
+  top: 45rpx;
+  left: 5%;
+  z-index: -1;
+}

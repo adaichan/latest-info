@@ -1,0 +1,26 @@
+<!--pages/list/list.wxml-->
+<!-- 引入模板 -->
+<import src="/pages/template/list-template.wxml" />
+<view>
+	<!-- 给父元素绑定事件实现事件委托 -->
+	<swiper catchtap="carouselToDetail" indicator-dots indicator-color="yellowgreen" indicator-active-color="pink">
+		<swiper-item>
+			<image data-index="0" src="/images/detail/carousel/1.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image data-index="1" src="/images/detail/carousel/2.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image data-index="2" src="/images/detail/carousel/3.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image data-index="3" src="/images/detail/carousel/4.jpg"></image>
+		</swiper-item>
+	</swiper>
+	<!-- 使用模板 -->
+	<block wx:for="{{listArr}}" wx:key="index">
+		<view catchtap="toDetail" data-index="{{index}}">
+			<template is="listTmp" data="{{...item}}" />
+		</view>
+	</block>
+</view>
